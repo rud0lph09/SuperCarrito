@@ -21,9 +21,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aK9-jj-Olo">
-                                <rect key="frame" x="236" y="285" width="128" height="30"/>
+                                <rect key="frame" x="196" y="254" width="208" height="92"/>
                                 <animations/>
-                                <state key="normal" title="Connect to Market"/>
+                                <color key="backgroundColor" red="0.060941369999628958" green="0.58487674295940317" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="aK9-jj-Olo" secondAttribute="height" multiplier="52:23" id="Yz2-Xg-jJd"/>
+                                    <constraint firstAttribute="width" constant="208" id="uXY-HU-OdN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Connect to Market">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
                                 <connections>
                                     <segue destination="Cp4-g5-G6e" kind="presentation" id="RID-8q-Etp"/>
                                 </connections>
@@ -39,7 +47,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1406" y="-7"/>
+            <point key="canvasLocation" x="960" y="-521"/>
         </scene>
         <!--Super View Controller-->
         <scene sceneID="GaL-5s-wrQ">
@@ -58,7 +66,7 @@
                                 <animations/>
                                 <state key="normal" title="Pagar"/>
                                 <connections>
-                                    <segue destination="3Hb-5q-Ylg" kind="show" id="ub5-qJ-wo0"/>
+                                    <segue destination="3Hb-5q-Ylg" kind="show" identifier="connect" id="ub5-qJ-wo0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3P-SP-lMy">
@@ -170,7 +178,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uwo-67-WtI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1756" y="251"/>
+            <point key="canvasLocation" x="1332" y="640"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Mjh-a5-AS1">
@@ -189,6 +197,17 @@
                                 <animations/>
                                 <items>
                                     <navigationItem title="CheckOut" id="ofg-LI-HhD">
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" style="plain" id="RNl-vJ-tsa">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IIO-QO-byf">
+                                                <rect key="frame" x="20" y="7" width="92" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <animations/>
+                                                <state key="normal" title="Cancel"/>
+                                                <connections>
+                                                    <segue destination="Cp4-g5-G6e" kind="show" id="P5K-2o-sFR"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" id="Se4-OL-mwj">
                                             <connections>
                                                 <action selector="settings:" destination="3Hb-5q-Ylg" id="klQ-ZU-neW"/>
@@ -335,4 +354,7 @@
             <point key="canvasLocation" x="353" y="311"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="RID-8q-Etp"/>
+    </inferredMetricsTieBreakers>
 </document>

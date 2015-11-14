@@ -4,3 +4,8 @@
 
 #import "iZettleSDK.h"
 #import "AmountWheel.h"
+#import "requests.h"
+#import "ViewController.h"
+
+
+

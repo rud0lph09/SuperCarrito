@@ -39,6 +39,7 @@
 		E2F6F8FB1BF7A46200F4E6C2 /* libc++abi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F6F8F81BF7A46200F4E6C2 /* libc++abi.tbd */; };
 		E2F6F9051BF7B00800F4E6C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F6F9041BF7B00800F4E6C2 /* AppDelegate.swift */; };
 		E2F6F9081BF7C17800F4E6C2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F6F9071BF7C17800F4E6C2 /* ViewController.m */; };
+		E2F6F9111BF7E05A00F4E6C2 /* requests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F6F9101BF7E05A00F4E6C2 /* requests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,8 @@
 		E2F6F9041BF7B00800F4E6C2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2F6F9061BF7C17800F4E6C2 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E2F6F9071BF7C17800F4E6C2 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E2F6F90F1BF7E05A00F4E6C2 /* requests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = requests.h; sourceTree = "<group>"; };
+		E2F6F9101BF7E05A00F4E6C2 /* requests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = requests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +226,8 @@
 				E2F6F9071BF7C17800F4E6C2 /* ViewController.m */,
 				E2F6F8DC1BF7A28500F4E6C2 /* ConsoleViewController.h */,
 				E2F6F8DD1BF7A28500F4E6C2 /* ConsoleViewController.m */,
+				E2F6F90F1BF7E05A00F4E6C2 /* requests.h */,
+				E2F6F9101BF7E05A00F4E6C2 /* requests.m */,
 				E2F6F8D21BF7832200F4E6C2 /* AmountWheel.h */,
 				E2F6F8D31BF7832200F4E6C2 /* AmountWheel.m */,
 			);
@@ -297,6 +302,7 @@
 				TargetAttributes = {
 					E2F30A381BF70B61008F083B = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 27MUBRMHKJ;
 					};
 					E2F30A4C1BF70B62008F083B = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -363,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2F6F9051BF7B00800F4E6C2 /* AppDelegate.swift in Sources */,
+				E2F6F9111BF7E05A00F4E6C2 /* requests.m in Sources */,
 				E2F30A6F1BF715BD008F083B /* Item.swift in Sources */,
 				E2F30A3F1BF70B62008F083B /* MarketViewController.swift in Sources */,
 				E2F30A731BF739DA008F083B /* cellt.swift in Sources */,
@@ -516,6 +523,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -528,6 +537,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = luisitoelpilloinc.SuperCarrito;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SuperCarrito-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -538,6 +548,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -550,6 +562,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = luisitoelpilloinc.SuperCarrito;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SuperCarrito-Bridging-Header.h";
 			};
 			name = Release;

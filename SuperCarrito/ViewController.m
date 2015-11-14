@@ -11,30 +11,37 @@
 #import "ConsoleViewController.h"
 
 
+
 @interface ViewController ()
+
 @property (weak, nonatomic) IBOutlet UIButton *chargeButton;
 @property (weak, nonatomic) IBOutlet AmountWheel *amountWheel;
 @property (weak, nonatomic) IBOutlet UILabel *amountLabel;
 @property (weak, nonatomic) IBOutlet UIToolbar *lastPaymentInfoToolBar;
 @property (weak, nonatomic) IBOutlet UIView *dotView;
+
+
 @end
 
 @implementation ViewController {
+    
     iZettleSDKPaymentInfo *_lastPaymentInfo;
     NSString *_lastReference;
     NSDate *_timestamp;
     NSError *_lastError;
     NSNumberFormatter *_numberFormatter;
+    
 }
 
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad {
+    NSLog(@"%@",_prize);
     [super viewDidLoad];
     _numberFormatter = [[NSNumberFormatter alloc] init];
     _numberFormatter.minimumFractionDigits = 2;
     _numberFormatter.minimumIntegerDigits = 1;
-    _amountLabel.text = @"1,00";
+    _amountLabel.text = _prize;
     
 }
 
@@ -42,7 +49,7 @@
     [super viewWillAppear:animated];
     _amountWheel.amountUpdatedBlock = ^(NSDecimalNumber *amount) {
         //_amountLabel.text = [_numberFormatter stringFromNumber:amount];
-        _amountLabel.text = @"1,00";
+        _amountLabel.text = _prize;
     };
 }
 

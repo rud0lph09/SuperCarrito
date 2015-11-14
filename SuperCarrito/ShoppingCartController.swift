@@ -9,9 +9,12 @@
 import UIKit
 
 
+
 class ShoppingCartController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+    //@"http://10.49.86.154:8080/v1/productos/@d", product
+    var rocket = request()
     //Mark: Variables
+    var url: String = "http://10.49.86.154:8080/v1/productos/"
     let ShoppingList0 = ShoppingList()
     var sections = [Int]()
     let ScreenSize: CGRect = UIScreen.mainScreen().bounds
@@ -47,8 +50,21 @@ class ShoppingCartController: UIViewController, UITableViewDelegate, UITableView
         }
         return total
     }
+    func parser(str: String)->NSDictionary{
+        let data = str.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)!
+        var json = NSArray()
+        do {
+            json = try NSJSONSerialization.JSONObjectWithData(data, options: []) as! [[String: AnyObject]]
+            
+        } catch let error as NSError {
+            print("Failed to load: \(error.localizedDescription)")
+        }
+        return json[0] as! NSDictionary
+    }
     func addItem(id: String){
-        self.ShoppingList0.addItems("Another Product", price: "10", id: id)
+        let item = self.parser(self.rocket.getCall(id)).allValues
+        print("<<<<<<<<\(item[0])  ****\(item[6])")
+        self.ShoppingList0.addItems("\(item[6])", price: "\(item[0])", id: id)
         self.getTotal()
         self.productTable.reloadData()
         self.submitButton.setTitle( String(format: "Total: %.2f", getTotal()), forState: UIControlState.Normal)
@@ -61,6 +77,7 @@ class ShoppingCartController: UIViewController, UITableViewDelegate, UITableView
         }
         self.Scanner.readData.text = ""
     }
+    
     func presentScanner(){
         UIView.animateWithDuration(1/3, animations: {
             self.Scanner.transform = CGAffineTransformMakeTranslation(0, self.screenHeight)
@@ -79,7 +96,7 @@ class ShoppingCartController: UIViewController, UITableViewDelegate, UITableView
         self.screenHeight = ScreenSize.height
         self.Scanner.center = CGPointMake(self.screenWidth/2, -self.screenHeight)
         self.ShoppingList0.addItems("RedBull", price: "49.50", id: "01")
-        self.ShoppingList0.addItems("Amazon Girl", price: "700", id: "02")
+        self.ShoppingList0.addItems("Kleenex", price: "30", id: "02")
         self.submitButton.setTitle( String(format: "Total: %.2f", getTotal()), forState: UIControlState.Normal)
         super.viewDidLoad()
         view.bringSubviewToFront(Scanner)
@@ -109,6 +126,14 @@ class ShoppingCartController: UIViewController, UITableViewDelegate, UITableView
         return "Articulos"
     }
     
-    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "connect") {
+//                        Checking identifier is crucial as there might be multiple
+//                         segues attached to same view
+                        let detailVC = segue.destinationViewController as! ViewController;
+                        detailVC.prize = "\(self.getTotal())"
+                    }
+
+    }
     
 }

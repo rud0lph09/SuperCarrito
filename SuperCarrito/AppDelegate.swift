@@ -12,10 +12,13 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var connectedStatus: Bool?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        iZettleSDK.shared().startWithAPIKey("demo-app-izorn")
         // Override point for customization after application launch.
+//        [[iZettleSDK shared] startWithAPIKey:@"demo-app-izorn"]
+        
         return true
     }
 

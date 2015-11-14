@@ -7,13 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E2F30A3D1BF70B62008F083B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F30A3C1BF70B62008F083B /* AppDelegate.swift */; };
-		E2F30A3F1BF70B62008F083B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F30A3E1BF70B62008F083B /* ViewController.swift */; };
+		E2F30A3F1BF70B62008F083B /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F30A3E1BF70B62008F083B /* MarketViewController.swift */; };
 		E2F30A421BF70B62008F083B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2F30A401BF70B62008F083B /* Main.storyboard */; };
 		E2F30A441BF70B62008F083B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2F30A431BF70B62008F083B /* Assets.xcassets */; };
 		E2F30A471BF70B62008F083B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2F30A451BF70B62008F083B /* LaunchScreen.storyboard */; };
 		E2F30A521BF70B62008F083B /* SuperCarritoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F30A511BF70B62008F083B /* SuperCarritoTests.swift */; };
 		E2F30A5D1BF70B62008F083B /* SuperCarritoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F30A5C1BF70B62008F083B /* SuperCarritoUITests.swift */; };
+		E2F30A6B1BF70F50008F083B /* ShoppingCartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F30A6A1BF70F50008F083B /* ShoppingCartController.swift */; };
+		E2F30A6D1BF71424008F083B /* ShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F30A6C1BF71424008F083B /* ShoppingList.swift */; };
+		E2F30A6F1BF715BD008F083B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F30A6E1BF715BD008F083B /* Item.swift */; };
+		E2F30A711BF71965008F083B /* ReaderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F30A701BF71965008F083B /* ReaderController.swift */; };
+		E2F30A731BF739DA008F083B /* cellt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F30A721BF739DA008F083B /* cellt.swift */; };
+		E2F6F8B81BF75E7500F4E6C2 /* tinyBits.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F6F8B71BF75E7500F4E6C2 /* tinyBits.swift */; };
+		E2F6F8C31BF76F6100F4E6C2 /* iZettleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F6F8C21BF76F6100F4E6C2 /* iZettleSDK.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		E2F6F8D41BF7832200F4E6C2 /* AmountWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F6F8D31BF7832200F4E6C2 /* AmountWheel.m */; };
+		E2F6F8D61BF784E400F4E6C2 /* PayloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F6F8D51BF784E400F4E6C2 /* PayloadView.swift */; };
+		E2F6F8DF1BF7A28500F4E6C2 /* ConsoleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F6F8DD1BF7A28500F4E6C2 /* ConsoleViewController.m */; };
+		E2F6F8E11BF7A33B00F4E6C2 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F6F8E01BF7A33B00F4E6C2 /* MessageUI.framework */; };
+		E2F6F8E31BF7A34500F4E6C2 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F6F8E21BF7A34500F4E6C2 /* Accelerate.framework */; };
+		E2F6F8E51BF7A34E00F4E6C2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F6F8E41BF7A34E00F4E6C2 /* QuartzCore.framework */; };
+		E2F6F8E71BF7A35800F4E6C2 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F6F8E61BF7A35800F4E6C2 /* MediaPlayer.framework */; };
+		E2F6F8E91BF7A36400F4E6C2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F6F8E81BF7A36400F4E6C2 /* AVFoundation.framework */; };
+		E2F6F8EB1BF7A36C00F4E6C2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F6F8EA1BF7A36C00F4E6C2 /* AudioToolbox.framework */; };
+		E2F6F8ED1BF7A37100F4E6C2 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F6F8EC1BF7A37100F4E6C2 /* ExternalAccessory.framework */; };
+		E2F6F8EF1BF7A37600F4E6C2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F6F8EE1BF7A37600F4E6C2 /* CoreLocation.framework */; };
+		E2F6F8F11BF7A37E00F4E6C2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F6F8F01BF7A37E00F4E6C2 /* SystemConfiguration.framework */; };
+		E2F6F8F41BF7A3DA00F4E6C2 /* iZettleShared.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E2F6F8F21BF7A3DA00F4E6C2 /* iZettleShared.bundle */; };
+		E2F6F8F51BF7A3DA00F4E6C2 /* iZettleStorePurchase.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E2F6F8F31BF7A3DA00F4E6C2 /* iZettleStorePurchase.bundle */; };
+		E2F6F8F91BF7A46200F4E6C2 /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F6F8F61BF7A46200F4E6C2 /* libc++.1.tbd */; };
+		E2F6F8FA1BF7A46200F4E6C2 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F6F8F71BF7A46200F4E6C2 /* libc++.tbd */; };
+		E2F6F8FB1BF7A46200F4E6C2 /* libc++abi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F6F8F81BF7A46200F4E6C2 /* libc++abi.tbd */; };
+		E2F6F9051BF7B00800F4E6C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F6F9041BF7B00800F4E6C2 /* AppDelegate.swift */; };
+		E2F6F9081BF7C17800F4E6C2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F6F9071BF7C17800F4E6C2 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +60,7 @@
 
 /* Begin PBXFileReference section */
 		E2F30A391BF70B61008F083B /* SuperCarrito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperCarrito.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2F30A3C1BF70B62008F083B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E2F30A3E1BF70B62008F083B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E2F30A3E1BF70B62008F083B /* MarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
 		E2F30A411BF70B62008F083B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2F30A431BF70B62008F083B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2F30A461BF70B62008F083B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +71,36 @@
 		E2F30A581BF70B62008F083B /* SuperCarritoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperCarritoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2F30A5C1BF70B62008F083B /* SuperCarritoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperCarritoUITests.swift; sourceTree = "<group>"; };
 		E2F30A5E1BF70B62008F083B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2F30A6A1BF70F50008F083B /* ShoppingCartController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCartController.swift; sourceTree = "<group>"; };
+		E2F30A6C1BF71424008F083B /* ShoppingList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingList.swift; sourceTree = "<group>"; };
+		E2F30A6E1BF715BD008F083B /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		E2F30A701BF71965008F083B /* ReaderController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderController.swift; sourceTree = "<group>"; };
+		E2F30A721BF739DA008F083B /* cellt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cellt.swift; sourceTree = "<group>"; };
+		E2F6F8B71BF75E7500F4E6C2 /* tinyBits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tinyBits.swift; sourceTree = "<group>"; };
+		E2F6F8B91BF76A8E00F4E6C2 /* SuperCarrito-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SuperCarrito-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		E2F6F8C21BF76F6100F4E6C2 /* iZettleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iZettleSDK.framework; path = ../iZettleSDK.framework; sourceTree = "<group>"; };
+		E2F6F8D21BF7832200F4E6C2 /* AmountWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmountWheel.h; sourceTree = "<group>"; };
+		E2F6F8D31BF7832200F4E6C2 /* AmountWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmountWheel.m; sourceTree = "<group>"; };
+		E2F6F8D51BF784E400F4E6C2 /* PayloadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayloadView.swift; sourceTree = "<group>"; };
+		E2F6F8DC1BF7A28500F4E6C2 /* ConsoleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsoleViewController.h; sourceTree = "<group>"; };
+		E2F6F8DD1BF7A28500F4E6C2 /* ConsoleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConsoleViewController.m; sourceTree = "<group>"; };
+		E2F6F8E01BF7A33B00F4E6C2 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		E2F6F8E21BF7A34500F4E6C2 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		E2F6F8E41BF7A34E00F4E6C2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E2F6F8E61BF7A35800F4E6C2 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		E2F6F8E81BF7A36400F4E6C2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E2F6F8EA1BF7A36C00F4E6C2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E2F6F8EC1BF7A37100F4E6C2 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		E2F6F8EE1BF7A37600F4E6C2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E2F6F8F01BF7A37E00F4E6C2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E2F6F8F21BF7A3DA00F4E6C2 /* iZettleShared.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = iZettleShared.bundle; path = ../iZettleShared.bundle; sourceTree = "<group>"; };
+		E2F6F8F31BF7A3DA00F4E6C2 /* iZettleStorePurchase.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = iZettleStorePurchase.bundle; path = ../iZettleStorePurchase.bundle; sourceTree = "<group>"; };
+		E2F6F8F61BF7A46200F4E6C2 /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
+		E2F6F8F71BF7A46200F4E6C2 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		E2F6F8F81BF7A46200F4E6C2 /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
+		E2F6F9041BF7B00800F4E6C2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E2F6F9061BF7C17800F4E6C2 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E2F6F9071BF7C17800F4E6C2 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +108,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2F6F8F91BF7A46200F4E6C2 /* libc++.1.tbd in Frameworks */,
+				E2F6F8FA1BF7A46200F4E6C2 /* libc++.tbd in Frameworks */,
+				E2F6F8FB1BF7A46200F4E6C2 /* libc++abi.tbd in Frameworks */,
+				E2F6F8F11BF7A37E00F4E6C2 /* SystemConfiguration.framework in Frameworks */,
+				E2F6F8EF1BF7A37600F4E6C2 /* CoreLocation.framework in Frameworks */,
+				E2F6F8ED1BF7A37100F4E6C2 /* ExternalAccessory.framework in Frameworks */,
+				E2F6F8EB1BF7A36C00F4E6C2 /* AudioToolbox.framework in Frameworks */,
+				E2F6F8E91BF7A36400F4E6C2 /* AVFoundation.framework in Frameworks */,
+				E2F6F8E71BF7A35800F4E6C2 /* MediaPlayer.framework in Frameworks */,
+				E2F6F8E51BF7A34E00F4E6C2 /* QuartzCore.framework in Frameworks */,
+				E2F6F8E31BF7A34500F4E6C2 /* Accelerate.framework in Frameworks */,
+				E2F6F8E11BF7A33B00F4E6C2 /* MessageUI.framework in Frameworks */,
+				E2F6F8C31BF76F6100F4E6C2 /* iZettleSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +144,8 @@
 		E2F30A301BF70B61008F083B = {
 			isa = PBXGroup;
 			children = (
+				E2F6F8B91BF76A8E00F4E6C2 /* SuperCarrito-Bridging-Header.h */,
+				E2F6F8B71BF75E7500F4E6C2 /* tinyBits.swift */,
 				E2F30A3B1BF70B61008F083B /* SuperCarrito */,
 				E2F30A501BF70B62008F083B /* SuperCarritoTests */,
 				E2F30A5B1BF70B62008F083B /* SuperCarritoUITests */,
@@ -97,11 +166,33 @@
 		E2F30A3B1BF70B61008F083B /* SuperCarrito */ = {
 			isa = PBXGroup;
 			children = (
-				E2F30A3C1BF70B62008F083B /* AppDelegate.swift */,
-				E2F30A3E1BF70B62008F083B /* ViewController.swift */,
+				E2F6F9041BF7B00800F4E6C2 /* AppDelegate.swift */,
+				E2F30A3E1BF70B62008F083B /* MarketViewController.swift */,
 				E2F30A401BF70B62008F083B /* Main.storyboard */,
+				E2F6F8D51BF784E400F4E6C2 /* PayloadView.swift */,
+				E2F30A721BF739DA008F083B /* cellt.swift */,
+				E2F30A6C1BF71424008F083B /* ShoppingList.swift */,
+				E2F30A6E1BF715BD008F083B /* Item.swift */,
+				E2F30A6A1BF70F50008F083B /* ShoppingCartController.swift */,
+				E2F6F8C41BF7727E00F4E6C2 /* ObjC */,
+				E2F30A701BF71965008F083B /* ReaderController.swift */,
 				E2F30A431BF70B62008F083B /* Assets.xcassets */,
 				E2F30A451BF70B62008F083B /* LaunchScreen.storyboard */,
+				E2F6F8F61BF7A46200F4E6C2 /* libc++.1.tbd */,
+				E2F6F8F71BF7A46200F4E6C2 /* libc++.tbd */,
+				E2F6F8F81BF7A46200F4E6C2 /* libc++abi.tbd */,
+				E2F6F8F21BF7A3DA00F4E6C2 /* iZettleShared.bundle */,
+				E2F6F8F31BF7A3DA00F4E6C2 /* iZettleStorePurchase.bundle */,
+				E2F6F8F01BF7A37E00F4E6C2 /* SystemConfiguration.framework */,
+				E2F6F8EE1BF7A37600F4E6C2 /* CoreLocation.framework */,
+				E2F6F8EC1BF7A37100F4E6C2 /* ExternalAccessory.framework */,
+				E2F6F8EA1BF7A36C00F4E6C2 /* AudioToolbox.framework */,
+				E2F6F8E81BF7A36400F4E6C2 /* AVFoundation.framework */,
+				E2F6F8E61BF7A35800F4E6C2 /* MediaPlayer.framework */,
+				E2F6F8E41BF7A34E00F4E6C2 /* QuartzCore.framework */,
+				E2F6F8E21BF7A34500F4E6C2 /* Accelerate.framework */,
+				E2F6F8E01BF7A33B00F4E6C2 /* MessageUI.framework */,
+				E2F6F8C21BF76F6100F4E6C2 /* iZettleSDK.framework */,
 				E2F30A481BF70B62008F083B /* Info.plist */,
 			);
 			path = SuperCarrito;
@@ -123,6 +214,19 @@
 				E2F30A5E1BF70B62008F083B /* Info.plist */,
 			);
 			path = SuperCarritoUITests;
+			sourceTree = "<group>";
+		};
+		E2F6F8C41BF7727E00F4E6C2 /* ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				E2F6F9061BF7C17800F4E6C2 /* ViewController.h */,
+				E2F6F9071BF7C17800F4E6C2 /* ViewController.m */,
+				E2F6F8DC1BF7A28500F4E6C2 /* ConsoleViewController.h */,
+				E2F6F8DD1BF7A28500F4E6C2 /* ConsoleViewController.m */,
+				E2F6F8D21BF7832200F4E6C2 /* AmountWheel.h */,
+				E2F6F8D31BF7832200F4E6C2 /* AmountWheel.m */,
+			);
+			name = ObjC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +333,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2F6F8F41BF7A3DA00F4E6C2 /* iZettleShared.bundle in Resources */,
 				E2F30A471BF70B62008F083B /* LaunchScreen.storyboard in Resources */,
 				E2F30A441BF70B62008F083B /* Assets.xcassets in Resources */,
 				E2F30A421BF70B62008F083B /* Main.storyboard in Resources */,
+				E2F6F8F51BF7A3DA00F4E6C2 /* iZettleStorePurchase.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +362,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2F30A3F1BF70B62008F083B /* ViewController.swift in Sources */,
-				E2F30A3D1BF70B62008F083B /* AppDelegate.swift in Sources */,
+				E2F6F9051BF7B00800F4E6C2 /* AppDelegate.swift in Sources */,
+				E2F30A6F1BF715BD008F083B /* Item.swift in Sources */,
+				E2F30A3F1BF70B62008F083B /* MarketViewController.swift in Sources */,
+				E2F30A731BF739DA008F083B /* cellt.swift in Sources */,
+				E2F6F8D41BF7832200F4E6C2 /* AmountWheel.m in Sources */,
+				E2F30A711BF71965008F083B /* ReaderController.swift in Sources */,
+				E2F6F9081BF7C17800F4E6C2 /* ViewController.m in Sources */,
+				E2F30A6D1BF71424008F083B /* ShoppingList.swift in Sources */,
+				E2F30A6B1BF70F50008F083B /* ShoppingCartController.swift in Sources */,
+				E2F6F8DF1BF7A28500F4E6C2 /* ConsoleViewController.m in Sources */,
+				E2F6F8B81BF75E7500F4E6C2 /* tinyBits.swift in Sources */,
+				E2F6F8D61BF784E400F4E6C2 /* PayloadView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,10 +515,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/iZettleSDK.framework/Headers";
 				INFOPLIST_FILE = SuperCarrito/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = luisitoelpilloinc.SuperCarrito;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SuperCarrito-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -410,10 +537,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/iZettleSDK.framework/Headers";
 				INFOPLIST_FILE = SuperCarrito/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = luisitoelpilloinc.SuperCarrito;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SuperCarrito-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -421,11 +558,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = SuperCarritoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = luisitoelpilloinc.SuperCarritoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuperCarrito.app/SuperCarrito";
 			};
 			name = Debug;
 		};
@@ -433,11 +570,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = SuperCarritoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = luisitoelpilloinc.SuperCarritoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuperCarrito.app/SuperCarrito";
 			};
 			name = Release;
 		};
@@ -484,6 +621,7 @@
 				E2F30A631BF70B62008F083B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2F30A641BF70B62008F083B /* Build configuration list for PBXNativeTarget "SuperCarritoTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +630,7 @@
 				E2F30A661BF70B62008F083B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2F30A671BF70B62008F083B /* Build configuration list for PBXNativeTarget "SuperCarritoUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +639,7 @@
 				E2F30A691BF70B62008F083B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
